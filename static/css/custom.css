@@ -1,0 +1,6 @@
+.example-apple {
+    max-width: 100%;
+}
+input:disabled {
+    background: #eee;
+}
