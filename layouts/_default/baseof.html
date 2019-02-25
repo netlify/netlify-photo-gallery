@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ block "title" . }}
+    {{ .Site.Title }}
+    {{ end }}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/masonry.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row" style="margin-top: 5%">
+      {{ range .Site.Menus.main }}
+      <div class="one-third column">
+        <a href="{{ .URL }}" title="{{ .Title }}">
+          {{- .Name -}}
+        </a>
+      </div>
+      {{ end }}
+    </div>
+    <!-- Code that all your templates share, like a header -->
+    {{ block "main" . }}
+    <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+    {{ block "footer" . }}
+    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{ end }}
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+baseURL = "https://netlify-photo-gallery.netlify.com/"
+languageCode = "en-us"
+title = "Netlify photo gallery"
+
+[menu]
+  [[menu.main]]
+    identifier = "contribute"
+    name = "show contribute guide"
+    url = "/contribute/"
+  [[menu.main]]
+    identifier = "photos_m"
+    name = "photo gallery (masonry)"
+    url = "/photos_m/"
+  [[menu.main]]
+    identifier = "photos_s"
+    name = "photo gallery (square)"
+    url = "/photos_s/"
