@@ -13,3 +13,9 @@ This project has two branches:
 ### What can I do with this?
 
 If you want to try deploying your own photo gallery with Netlify Large Media, please go to the [README](https://github.com/netlify/netlify-photo-gallery/blob/master/README.md) for how to do it.
+
+### Transformation demo with Apple
+
+Transformation with Netlify Large Media is easy. You can just add a query parameter at the end of the image src URL to specify which transformation you want.
+
+Here is the sample code that you can play with.

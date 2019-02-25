@@ -2,7 +2,36 @@
 <div class="row" style="margin-top: 5%">
   <div class="twelve column">
     <h1>{{.Title}}</h1>
-    <p>{{.Content}}</p>
+    {{.Content}}
+    <p>Sample Apple Image (original image: 5184x3456, 3.9MB)</p>
+    <form onsubmit="return applyParams()">
+      <div class="row">
+        <div class="four columns">
+          <label for="exampleNfResize">nf_resize</label>
+          <select class="u-full-width" id="exampleNfResize">
+            <option value="fit">fit</option>
+            <option value="smartcrop">smartcrop</option>
+          </select>
+        </div>
+        <div class="four columns">
+          <label for="exampleWidth">Width</label>
+          <input class="u-full-width" type="number" value="100" id="exampleWidth">
+        </div>
+        <div class="four columns">
+          <label for="exampleHeight">Height</label>
+          <input class="u-full-width" type="number" value="100" id="exampleHeight">
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+        <label for="exampleParams">Generated Params</label>
+        <input class="u-full-width" type="text" id="exampleParams" disabled>
+      </div>
+    </div>
+    <input class="button-primary" type="submit" value="Apply params">
+    </form>
+    <img class="example-apple" id="exampleApple" src="/images/apple.jpg">
   </div>
+  <script type="application/javascript" src="/js/custom.js"></script>
 </div>
 {{ end }}
