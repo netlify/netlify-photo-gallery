@@ -2,7 +2,13 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/219e0a85-cf6a-43e7-94fe-cd09373a105e/deploy-status)](https://app.netlify.com/sites/netlify-photo-gallery/deploys)
 
-A simple photo gallery example site, made with Hugo. You can deploy this to Netlify, then setup Large Media to play with it.
+This is a photo gallery demo project for Netlify Large Media made with the photos from [Unsplash](https://unsplash.com/) and Hugo.
+
+This project has two branches:
+
+* **master:** A photo gallery that _doesn't use_ Netlify Large Media feature. You can go to [README](https://github.com/netlify/netlify-photo-gallery/blob/master/README.md) to see how you can deploy this with your Netlify account and start using Large Media feature.
+
+* **large-media-sample:** A photo gallery that uses Netlify Large Media feature. You can go to a []() folder to see how large media assets are managed with Git. This branch is deployed as [https://netlify-photo-gallery.netlify.com/](https://netlify-photo-gallery.netlify.com/) demo page.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-photo-gallery)
 
