@@ -12,7 +12,8 @@ This project has two branches:
 
 ## How to play with this
 
-1. Deploy to Netlify with "Deploy to Netlify" button. This will create a new Netlify site and copy the repo to your GitHub account. 
+1. Deploy to Netlify with "Deploy to Netlify" button. This will create a new Netlify site and copy the repo to your GitHub account.
+
    [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-photo-gallery)
 2. Clone a newly created repo to your local computer with `git clone`.
 3. `netlify link` to link the local repo and the Netlify site.
