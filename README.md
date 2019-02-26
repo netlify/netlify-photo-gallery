@@ -10,22 +10,16 @@ This project has two branches:
 
 * **large-media-sample:** A photo gallery that uses Netlify Large Media feature. You can go to a [static/images](https://github.com/netlify/netlify-photo-gallery/tree/large-media-sample/static/images) folder to see how large media assets are managed with Git. This branch is deployed as [https://netlify-photo-gallery.netlify.com/](https://netlify-photo-gallery.netlify.com/) demo page.
 
-## How to play with this
+## How to deploy your own photo gallery to play with it
 
 1. Deploy to Netlify with "Deploy to Netlify" button. This will create a new Netlify site and copy the repo to your GitHub account.
 
    [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-photo-gallery)
 2. Clone a newly created repo to your local computer with `git clone`.
-3. `netlify link` to link the local repo and the Netlify site.
-   * Make sure to install Netlify CLI if you haven't: `npm install netlify-cli -g`.
-4. Check if the Large Media local setup has finished already.
-   * You can check it with `netlify lm:info` command.
-   * Make sure to install netlify-lm-plugin plugin if you haven't: `netlify plugins:install netlify-lm-plugin`.
-5. Run `netlify lm:setup` to setup the Large Media for this repository/site.
-   * It will create a `.lfsconfig` file, make sure you track this file.
-6. Tweak the LFS settings with the `git lfs` commands. The follow example contains `jpg` and `png` files, and expects that both of them are tracked by LFS:
+3. Follow the step of [Enabling Netlify Large Media](https://www.netlify.com/docs/large-media/#enabling-netlify-large-media) to enable Large Media for the newly deployed site.
+4. Tweak the LFS settings with the `git lfs` commands. The following example tracks `jpg` and `png` files. Tracking them is required for this photo gallery, so you can start tracking them:
    * To track jpg files: `git lfs track *.jpg`.
    * To track png files: `git lfs track *.png`.
-   * To track all files under `static/images`: `git lfs track static/images/**`.
-7. Run `git push origin master` to push your changes to GitHub. It'll be automatically deployed to Netlify utlizing Large Media.
+5. Explore more for how to configure the tracking in [the documentation](https://www.netlify.com/docs/large-media/#large-media-file-tracking-configuration).
+7. After making sure you `git add` changes, run `git push origin master` to push your changes to GitHub. It'll be automatically deployed to Netlify utlizing Large Media.
 8. Try transformations with image files. For example, you can tweak the layout file with `layouts/photos_s/list.html`.

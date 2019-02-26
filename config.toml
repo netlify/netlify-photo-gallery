@@ -4,9 +4,9 @@ title = "Netlify photo gallery"
 
 [menu]
   [[menu.main]]
-    identifier = "contribute"
-    name = "show contribute guide"
-    url = "/contribute/"
+    identifier = "top"
+    name = "top"
+    url = "/"
   [[menu.main]]
     identifier = "photos_m"
     name = "photo gallery (masonry)"
