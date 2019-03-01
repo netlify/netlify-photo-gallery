@@ -5,13 +5,13 @@ title = "Netlify photo gallery"
 [menu]
   [[menu.main]]
     identifier = "top"
-    name = "top"
+    name = "Home"
     url = "/"
   [[menu.main]]
     identifier = "photos_m"
-    name = "photo gallery (masonry)"
+    name = "Photo gallery (masonry)"
     url = "/photos_m/"
   [[menu.main]]
     identifier = "photos_s"
-    name = "photo gallery (square)"
+    name = "Photo gallery (square)"
     url = "/photos_s/"
