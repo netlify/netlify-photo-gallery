@@ -9,19 +9,14 @@ This project has two branches:
 * **master:** A photo gallery that does _not_ have Netlify Large Media enabled yet. You can follow the [README instructions](https://github.com/netlify/netlify-photo-gallery/blob/master/README.md/#how-to-deploy-your-own-photo-gallery-with-large-media) to deploy this with your Netlify account and start using Large Media yourself.
 * **large-media-sample:** A copy of the photo gallery, with Netlify Large Media enabled. You can go to the files in the [static/images](https://github.com/netlify/netlify-photo-gallery/tree/large-media-sample/static/images) folder to see how large media assets are managed with Git. This branch is used to deploy the demo site, [https://netlify-photo-gallery.netlify.com/](https://netlify-photo-gallery.netlify.com/).
 
-## How to deploy your own photo gallery with Netlify Large Media
+**This is the `large-media-sample` branch.**
 
-1. Deploy to Netlify with "Deploy to Netlify" button. This will create a new Netlify site and copy the repository to your GitHub account.
+## Contributing (Netlify employees only)
 
-   [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-photo-gallery)
-2. Find your newly created repository on GitHub and clone it to your local computer with `git clone`.
-3. Follow the instructions for [Enabling Netlify Large Media](https://www.netlify.com/docs/large-media/#enabling-netlify-large-media) to enable Large Media for the newly deployed site.
-4. Specify which files to track using the `git lfs track` command. The following example tracks `jpg` and `png` files. Tracking them is required for this photo gallery, so you can start tracking them:
-   * To track jpg files: `git lfs track "*.jpg"`.
-   * To track png files: `git lfs track "*.png"`.
-5. Find out more about how to configure file tracking in [the documentation](https://www.netlify.com/docs/large-media/#large-media-file-tracking-configuration).
-7. After making sure you `git add`  and `git commit` your changes, run `git push origin master` to push your changes to GitHub. It'll be automatically deployed to Netlify using Large Media.
-8. When your deploy is done, try running transformations with the image files. For example, you can tweak the layout file at `layouts/photos_s/list.html`.
+To contribute to a site with Large Media enabled, you must have collaborator access or higher for the site on Netlify. The site built with this branch is editable only by members of the Netlify team. To get started:
+
+1. Make sure you have completed the [requirements for Large Media](https://www.netlify.com/docs/large-media/#requirements), including installing Git LFS, Netlify CLI, and the Large Media CLI plugin.
+2. Clone the repository and work as normal.
 
 ## Running the site locally
 
